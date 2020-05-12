@@ -1,0 +1,73 @@
+<%- include('partials/header.ejs') %>
+<div class="button-container">
+  <div class="button-group">
+    <h1 class="text-center">Princess Status</h1>
+    
+    <% if(status.princess.meeting){ %>
+      <button type="button" data-person="princess-meeting" class="btn btn-success btn-secondary btn-lg btn-block">
+    <% } else{ %>
+      <button type="button" data-person="princess-meeting" class="btn btn-secondary btn-lg btn-block">
+    <% } %>
+      Meeting
+    </button>
+
+    <% if(status.princess.camera){ %>
+      <button type="button" data-person="princess-camera" class="btn btn-success btn-secondary btn-lg btn-block">
+    <% } else{ %>
+      <button type="button" data-person="princess-camera" class="btn btn-secondary btn-lg btn-block">
+    <% } %>
+      Camera
+    </button>
+
+    <% if(status.princess.cameraBlur){ %>
+      <button type="button" data-person="princess-cameraBlur" class="btn btn-success btn-secondary btn-lg btn-block">
+    <% } else{ %>
+      <button type="button" data-person="princess-cameraBlur" class="btn btn-secondary btn-lg btn-block">
+    <% } %>
+      Camera Blurred
+    </button>
+
+    <% if(status.princess.voice){ %>
+      <button type="button" data-person="princess-voice" class="btn btn-success btn-secondary btn-lg btn-block">
+    <% } else{ %>
+      <button type="button" data-person="princess-voice" class="btn btn-secondary btn-lg btn-block">
+    <% } %>
+      Voice
+    </button>
+  </div>
+  <div class="button-group">
+    <h1 class="text-center">GBear Status</h1>
+    <% if(status.gbear.meeting){ %>
+      <button type="button" data-person="gbear-meeting" class="btn btn-success btn-secondary btn-lg btn-block">
+    <% } else{ %>
+      <button type="button" data-person="gbear-meeting" class="btn btn-secondary btn-lg btn-block">
+    <% } %>
+      Meeting
+    </button>
+
+    <% if(status.gbear.camera){ %>
+      <button type="button" data-person="gbear-camera" class="btn btn-success btn-secondary btn-lg btn-block">
+    <% } else{ %>
+      <button type="button" data-person="gbear-camera" class="btn btn-secondary btn-lg btn-block">
+    <% } %>
+      Camera
+    </button>
+
+    <% if(status.gbear.cameraBlur){ %>
+      <button type="button" data-person="gbear-cameraBlur" class="btn btn-success btn-secondary btn-lg btn-block">
+    <% } else{ %>
+      <button type="button" data-person="gbear-cameraBlur" class="btn btn-secondary btn-lg btn-block">
+    <% } %>
+      Camera Blurred
+    </button>
+
+    <% if(status.gbear.voice){ %>
+      <button type="button" data-person="gbear-voice" class="btn btn-success btn-secondary btn-lg btn-block">
+    <% } else{ %>
+      <button type="button" data-person="gbear-voice" class="btn btn-secondary btn-lg btn-block">
+    <% } %>
+      Voice
+    </button>
+  </div>
+</div>
+<%- include('partials/footer.ejs') %>
