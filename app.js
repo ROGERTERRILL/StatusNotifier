@@ -35,7 +35,7 @@ app.post('/', function (req, res) {
     case 'princess-camera':
       status.princess.camera = !status.princess.camera;
       break;
-    case 'princess-cameraBlur':
+    case 'princess-camerablur':
       status.princess.camerablur = !status.princess.camerablur;
       break;
     case 'princess-voice':
@@ -47,7 +47,7 @@ app.post('/', function (req, res) {
     case 'gbear-camera':
       status.gbear.camera = !status.gbear.camera;
       break;
-    case 'gbear-cameraBlur':
+    case 'gbear-camerablur':
       status.gbear.camerablur = !status.gbear.camerablur;
       break;
     case 'gbear-voice':
