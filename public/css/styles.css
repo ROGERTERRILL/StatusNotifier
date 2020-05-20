@@ -1,0 +1,13 @@
+.button-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}

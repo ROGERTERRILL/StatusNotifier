@@ -34,6 +34,14 @@
     <% } %>
       Voice
     </button>
+
+    <% if(status.princess.call){ %>
+      <button type="button" data-person="princess-call" class="btn btn-success btn-secondary btn-lg btn-block">
+    <% } else{ %>
+      <button type="button" data-person="princess-call" class="btn btn-secondary btn-lg btn-block">
+    <% } %>
+      Call
+    </button>
   </div>
   <div class="button-group">
     <h1 class="text-center">GBear Status</h1>

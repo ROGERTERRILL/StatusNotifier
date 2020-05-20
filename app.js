@@ -12,6 +12,7 @@ let status = {
     camera: false,
     camerablur: false,
     voice: false,
+    call: false,
   },
   gbear: {
     meeting: false,
@@ -40,6 +41,9 @@ app.post('/', function (req, res) {
       break;
     case 'princess-voice':
       status.princess.voice = !status.princess.voice;
+      break;
+    case 'princess-call':
+      status.princess.call = !status.princess.call;
       break;
     case 'gbear-meeting':
       status.gbear.meeting = !status.gbear.meeting;
